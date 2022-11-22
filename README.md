@@ -203,12 +203,6 @@ This was quite a big project. The description is quite short, but well... I spen
 
 ## 🔗 Useful resources
 
-- [ReactJS Course](https://scrimba.com/learn/learnreact/) - Awesome free interactive course!
-- [StackOverflow : Guide on a spinner](https://stackoverflow.com/questions/40987309/react-display-loading-screen-while-dom-is-rendering)
-- [W3Schools : Custom toggle switch](https://www.w3schools.com/howto/howto_css_switch.asp)
-- [Implementing Dark Mode In React Apps Using styled-components — Smashing Magazine](https://www.smashingmagazine.com/2020/04/dark-mode-react-apps-styled-components/) - Tried to use it, it didn't work, although it motivated me to use custom hooks, so eventually I came up with my own solution that worked fine
-- [Vite docs](https://vitejs.dev/)
-
 - [Redux Toolkit Introduction](https://www.youtube.com/watch?v=9zySeP5vH9c&t=1s&ab_channel=LearnWithJason) + [Github repository with code](https://github.com/learnwithjason/lets-learn-redux-toolkit) - Helped to understand how to work with Redux Toolkit
 - [How to deploy a react app on GH Pages](https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/) - to put shortly, just use HashRouter in the application
 - [How to Make a Custom Scrollbar](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp)

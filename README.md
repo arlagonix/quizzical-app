@@ -50,8 +50,10 @@ Figma prototype: https://www.figma.com/file/0SIScG6N67cgfIvsY5cQng/Quizzical-App
   - styled-components
 - **TypeScript**
   - ReactJS
+  - Redux
+  - Redux Toolkit
 - **NodeJS**
-- **Vite**
+- **Create React App**
 - **Github Pages**
 
 ## 🔨 Build project

@@ -1,5 +1,7 @@
 import { ThemeProvider } from "styled-components";
-import { BrowserRouter } from "react-router-dom";
+// Use HashRouter because of GH Pages
+// https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/
+import { HashRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
 import GlobalStyle from "./styles/GlobalStyle";
@@ -13,10 +15,10 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <ThemeProvider theme={theme}>
-        <BrowserRouter>
+        <HashRouter>
           <GlobalStyle></GlobalStyle>
           <App />
-        </BrowserRouter>
+        </HashRouter>
       </ThemeProvider>
     </Provider>
   </React.StrictMode>

@@ -199,7 +199,7 @@ My first ReactJS project with Create React App.
 - Custom skeleton components. They rely on a `react-loading-skeleton` library
 - Made routing with React Router
 
-This was quite a big project. The description is quite short, but well... I spent about 2 weeks on this project.
+This was quite a big project. The description is quite short, but well... I spent about 2 weeks on this project, and it wasn't easy at all.
 
 ## 🔗 Useful resources
 

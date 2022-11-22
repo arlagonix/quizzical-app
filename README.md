@@ -1,6 +1,6 @@
 <h1 align="center">Quizzical</h1>
 <p align="center">
-  Made with <code>HTML</code>, <code>CSS</code>, <code>TypeScript</code>, <code>ReactJS</code>, <code>styled-components</code>
+  Made with <code>HTML</code>, <code>CSS</code>, <code>TypeScript</code>, <code>ReactJS</code>, <code>styled-components</code>, <code>react-router</code>, <code>redux-toolkit</code>
 </p>
 <p align="center">
   Bootstrapped with <code>Create React App</code>

@@ -1,6 +1,5 @@
 // Code structure comes from https://github.com/learnwithjason/lets-learn-redux-toolkit
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-// import type { IQuestion } from "../../components/Card/index.types";
 import initialStateData from "./initialStateData";
 
 interface IToggleOption {

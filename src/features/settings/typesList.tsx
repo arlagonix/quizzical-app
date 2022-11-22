@@ -1,6 +1,10 @@
+/** Element of a list of types */
 export interface TypeOption {
+  /** Identifier for React keys */
   id: number;
+  /** Value passed to API query parameters */
   value: null | string;
+  /** Text value displayed on screen */
   text: string;
 }
 

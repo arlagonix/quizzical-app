@@ -112,7 +112,6 @@ Figma prototype: https://www.figma.com/file/0SIScG6N67cgfIvsY5cQng/Quizzical-App
 ├── 📁 src                            Source files needed for application development
 │   ├── 📁 app                        Hooks for work with Redux store (Redux toolkit)
 │   ├── 📁 assets                     Static assets, referred to in src
-
 │   ├── 📁 components                 React components
 |   |   └── 📁 Component Name
 |   |       ├── 📝 index.tsx          Component logic

@@ -104,36 +104,37 @@ Figma prototype: https://www.figma.com/file/0SIScG6N67cgfIvsY5cQng/Quizzical-App
 ## 📁 File Structure
 
 ```Markdown
-├── 📁 src                            Source files needed for application development
-│   ├── 📁 app                        Hooks for work with Redux store (Redux toolkit)
-│   ├── 📁 features                   Redux slices (Redux toolkit)
-│   ├── 📁 assets                     Static assets, referred to in src
-│   ├── 📁 styles                     Global styles
-│   ├── 📁 components                 React components
-|   |   └── 📁 Component Name
-|   |       ├── 📝 index.tsx          Component logic
-|   |       ├── 📝 index.styled.tsx   Component styles
-|   |       └── 📝 index.types.tsx    Component types (optional)
-│   ├── 📁 pages                      React page components
-|   |   └── 📁 Page Name
-|   |       ├── 📝 index.tsx          Page logic
-|   |       ├── 📝 index.styled.tsx   Page styles
-|   |       └── 📝 index.types.tsx    Page types (optional)
-│   ├── 📝 App.tsx                    App React component
-│   ├── 📝 index.tsx                  Entry point for the module bundler
-│   └── 📝 react-app-env.d.ts         Some Typescript stuff for Create React App
-|
 ├── 📁 docs                   Additional information, documentation 
 │   └── 📁 results            Screenshots of how the application works after being fully developed
 |
 ├── 📁 public                 Static assets: images, icons, favicons, index.html
 |
+├── 📁 src                            Source files needed for application development
+│   ├── 📁 app                        Hooks for work with Redux store (Redux toolkit)
+│   ├── 📁 assets                     Static assets, referred to in src
+
+│   ├── 📁 components                 React components
+|   |   └── 📁 Component Name
+|   |       ├── 📝 index.tsx          Component logic
+|   |       ├── 📝 index.styled.tsx   Component styles
+|   |       └── 📝 index.types.tsx    Component types (optional)
+│   ├── 📁 features                   Redux slices (Redux toolkit)
+│   ├── 📁 pages                      React page components
+|   |   └── 📁 Page Name
+|   |       ├── 📝 index.tsx          Page logic
+|   |       ├── 📝 index.styled.tsx   Page styles
+|   |       └── 📝 index.types.tsx    Page types (optional)
+│   ├── 📁 styles                     Global styles
+│   ├── 📝 App.tsx                    App React component
+│   ├── 📝 index.tsx                  Entry point for the module bundler
+│   └── 📝 react-app-env.d.ts         Some Typescript stuff for Create React App
+|
+├── 📝 .gitignore             Instructions for Git about what files to ignore
 ├── 📝 LICENSE                MIT License. Basically you can do whatever you want with the code
-├── 📝 tsconfig.json          TypeScript configuration file
+├── 📝 README.md              Project description
 ├── 📝 package-lock.json      Keeps track of the exact version of every package that is installed
 ├── 📝 package.json           Various metadata relevant to the project, scripts, dependencies
-├── 📝 .gitignore             Instructions for Git about what files to ignore
-└── 📝 README.md              Project description
+└── 📝 tsconfig.json          TypeScript configuration file
 ```
 
 ## 📦 NPM Packages worth mentioning

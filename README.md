@@ -1,10 +1,34 @@
 <h1 align="center">Quizzical</h1>
 <p align="center">
   Made with <code>HTML</code>, <code>CSS</code>, <code>TypeScript</code>, <code>ReactJS</code>, <code>styled-components</code>, <code>react-router</code>, <code>redux-toolkit</code>
-</p>
-<p align="center">
+  <br>
   Bootstrapped with <code>Create React App</code>
 </p>
+
+<p align="center">
+  <a href="../../commits"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arlagonix/multi-step-form"></a>
+  <a href="./LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/arlagonix/multi-step-form"></a>
+  <img src="https://img.shields.io/github/repo-size/arlagonix/quizzical-app" />
+</p>
+
+<p align="center">
+  <a href="#-screenshots">🖼 Screenshots</a> • 
+  <a href="#ℹ%EF%B8%8F-about">ℹ️ About</a> • 
+  <a href="#%EF%B8%8F-tools">⚙️ Tools</a> • 
+  <a href="#-build-project">🔨 How to Build Project</a> • 
+  <a href="#-file-structure">📁 File Structure</a>
+</p>
+
+<sup>
+  <p align="center">
+    <a href="#-npm-packages-worth-mentioning">📦 NPM Packages worth mentioning</a> • 
+    <a href="#-details">💡 Details</a> • 
+    <a href="#-useful-resources">🔗 Useful resources</a> • 
+    <a href="#-author">👤 Author</a>
+  </p>
+</sup>
+
+## 🖼 Screenshots
 
 <p align="center">
   <img src="./docs/results/homepage.png" width="100%">
@@ -79,114 +103,67 @@ Figma prototype: https://www.figma.com/file/0SIScG6N67cgfIvsY5cQng/Quizzical-App
 
 ## 📁 File Structure
 
-<table>
-  <tr>
-    <th>Path</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td colspan="2"></td>
-  </tr>
-  <tr>
-    <td><code>public</code></td>
-    <td>Folder with index.html and assets referenced from index.html</td>
-  </tr>
-  <tr>
-    <td colspan="2"></td>
-  </tr>
-  <tr>
-    <td><code>src</code></td>
-    <td>Source files needed for application development</td>
-  </tr>
-  <tr>
-    <td><code>src / app</code></td>
-    <td>Folder with hooks for work with Redux store</td>
-  </tr>
-  <tr>
-    <td><code>src / assets</code></td>
-    <td>Folder with static assets (images, favicon)</td>
-  </tr>
-  <tr>
-    <td><code>src / components</code></td>
-    <td>Folder with React components</td>
-  </tr>
-  <tr>
-    <td><code>src / features</code></td>
-    <td>Folder with Redux slices (Redux toolkit)</td>
-  </tr>
-  <tr>
-    <td><code>src / pages</code></td>
-    <td>Folder with pages</td>
-  </tr>
-  <tr>
-    <td><code>src / styles</code></td>
-    <td>Folder with global styles written in styled components</td>
-  </tr>
-  <tr>
-    <td><code>src / App.tsx</code></td>
-    <td>Main code for the application</td>
-  </tr>
-  <tr>
-    <td><code>src / App.styled.tsx</code></td>
-    <td>Styles for App.tsx (styled-components)</td>
-  </tr>
-  <tr>
-    <td><code>src / index.tsx</code></td>
-    <td>Entry point for the module bundler</td>
-  </tr>
-  <tr>
-    <td><code>src / styles.css</code></td>
-    <td>Styles for a spinner that is showed until all JS files are loaded</td>
-  </tr>
-  <tr>
-    <td><code>src / react-app-env.d.ts</code></td>
-    <td>This file references TypeScript types declarations that are specific to projects started with Create React App.</td>
-  </tr>
-  <tr>
-    <td colspan="2"></td>
-  </tr>
-  <tr>
-    <td><code>docs</code></td>
-    <td>Folder with additional information, documentation</td>
-  </tr>
-  <tr>
-    <td><code>docs / results</code></td>
-    <td>Folder with screenshots of how the application works after being fully developed</td>
-  </tr>
-  <tr>
-    <td><code>docs / requirements.png</code></td>
-    <td>What must be done in this challenge</td>
-  </tr>
-  <tr>
-    <td colspan="2"></td>
-  </tr>
-  <tr>
-    <td><code>LICENSE</code></td>
-    <td>MIT License</td>
-  </tr>
-  <tr>
-    <td><code>tsconfig.json</code></td>
-    <td>Configuration for TS compiler</td>
-  </tr>
-  <tr>
-    <td><code>package-lock.json</code></td>
-    <td>JSON file that keeps track of the exact version of every package that is installed so that a product is 100% reproducible in the same way even if packages are updated by their maintainers</td>
-  </tr>
-  <tr>
-    <td><code>package.json</code></td>
-    <td>JSON file that holds various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies</td>
-  </tr>
-  
-</table>
+```Markdown
+├── 📁 src                    Source files needed for application development
+│   ├── 📁 app             Hooks for work with Redux store (Redux toolkit)
+│   ├── 📁 features              Redux slices (Redux toolkit)
+│   ├── 📁 assets             Static assets, referred to in src
+│   ├── 📁 styles              Global styles
+│   ├── 📁 components         React components
+|   |   └── 📁 Component Name
+|   |       ├── 📝 index.tsx          Component logic
+|   |       ├── 📝 index.styled.tsx   Component styles
+|   |       └── 📝 index.types.tsx    Component types (optional)
+│   ├── 📁 pages                      React page components
+|   |   └── 📁 Page Name
+|   |       ├── 📝 index.tsx          Page logic
+|   |       ├── 📝 index.styled.tsx   Page styles
+|   |       └── 📝 index.types.tsx    Page types (optional)
+│   ├── 📝 App.tsx            App React component
+│   ├── 📝 index.tsx          Entry point for the module bundler
+│   └── 📝 react-app-env.d.ts      Some Typescript stuff for Create React App
+|
+├── 📁 docs                   Additional information, documentation 
+│   └── 📁 results            Screenshots of how the application works after being fully developed
+|
+├── 📁 public                 Static assets: images, icons, favicons, index.html
+|
+├── 📝 LICENSE                MIT License. Basically you can do whatever you want with the code
+├── 📝 tsconfig.json          TypeScript configuration file
+├── 📝 package-lock.json      Keeps track of the exact version of every package that is installed
+├── 📝 package.json           Various metadata relevant to the project, scripts, dependencies
+├── 📝 .gitignore             Instructions for Git about what files to ignore
+└── 📝 README.md
+```
 
 ## 📦 NPM Packages worth mentioning
 
-- `react-detect-offline` - Used it to display a component that is shown only when the user is offline
-- `react-loading-skeleton` - Used it to show skeletons while fetching new data
-- `react-toastify` - Used it to display notifications that disappear over time
-- `react-outside-click-handler` - Used it to close options list in select component when clicking outside
-- `@reduxjs/toolkit`, `react-redux` - Used them to store state in one place
-- `react-router-dom` - Used it to route user between pages
+<table>
+  <tr>
+    <td><code>react-detect-offline</code></td>
+    <td>Used it to display a component that is shown only when the user is offline</td>
+  </tr>
+  <tr>
+    <td><code>react-loading-skeleton</code></td>
+    <td>Used it to show skeletons while fetching new data</td>
+  </tr>
+  <tr>
+    <td><code>react-toastify</code></td>
+    <td>Used it to display notifications that disappear over time</td>
+  </tr>
+  <tr>
+    <td><code>react-outside-click-handler</code></td>
+    <td>Used it to close options list in select component when clicking outside</td>
+  </tr>
+  <tr>
+    <td><code>@reduxjs/toolkit</code>, <code>react-redux</code></td>
+    <td>Used them to store state in one place</td>
+  </tr>
+  <tr>
+    <td><code>react-router-dom</code></td>
+    <td>Used it to route user between pages</td>
+  </tr>
+</table>
 
 ## 💡 Details
 

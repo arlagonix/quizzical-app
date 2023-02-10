@@ -133,7 +133,7 @@ Figma prototype: https://www.figma.com/file/0SIScG6N67cgfIvsY5cQng/Quizzical-App
 ├── 📝 package-lock.json      Keeps track of the exact version of every package that is installed
 ├── 📝 package.json           Various metadata relevant to the project, scripts, dependencies
 ├── 📝 .gitignore             Instructions for Git about what files to ignore
-└── 📝 README.md
+└── 📝 README.md              Project description
 ```
 
 ## 📦 NPM Packages worth mentioning

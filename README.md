@@ -104,12 +104,12 @@ Figma prototype: https://www.figma.com/file/0SIScG6N67cgfIvsY5cQng/Quizzical-App
 ## 📁 File Structure
 
 ```Markdown
-├── 📁 src                    Source files needed for application development
-│   ├── 📁 app             Hooks for work with Redux store (Redux toolkit)
-│   ├── 📁 features              Redux slices (Redux toolkit)
-│   ├── 📁 assets             Static assets, referred to in src
-│   ├── 📁 styles              Global styles
-│   ├── 📁 components         React components
+├── 📁 src                            Source files needed for application development
+│   ├── 📁 app                        Hooks for work with Redux store (Redux toolkit)
+│   ├── 📁 features                   Redux slices (Redux toolkit)
+│   ├── 📁 assets                     Static assets, referred to in src
+│   ├── 📁 styles                     Global styles
+│   ├── 📁 components                 React components
 |   |   └── 📁 Component Name
 |   |       ├── 📝 index.tsx          Component logic
 |   |       ├── 📝 index.styled.tsx   Component styles
@@ -119,9 +119,9 @@ Figma prototype: https://www.figma.com/file/0SIScG6N67cgfIvsY5cQng/Quizzical-App
 |   |       ├── 📝 index.tsx          Page logic
 |   |       ├── 📝 index.styled.tsx   Page styles
 |   |       └── 📝 index.types.tsx    Page types (optional)
-│   ├── 📝 App.tsx            App React component
-│   ├── 📝 index.tsx          Entry point for the module bundler
-│   └── 📝 react-app-env.d.ts      Some Typescript stuff for Create React App
+│   ├── 📝 App.tsx                    App React component
+│   ├── 📝 index.tsx                  Entry point for the module bundler
+│   └── 📝 react-app-env.d.ts         Some Typescript stuff for Create React App
 |
 ├── 📁 docs                   Additional information, documentation 
 │   └── 📁 results            Screenshots of how the application works after being fully developed

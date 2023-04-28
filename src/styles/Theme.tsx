@@ -12,6 +12,7 @@ const Theme = {
   paleGold: "rgba(255, 176, 4, 0.15)",
   grayOne: "#777777",
   grayTwo: "#555555",
+  grayThree: "rgb(0 0 0 / 0.025)",
   black: "#000000",
 };
 

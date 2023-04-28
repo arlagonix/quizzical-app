@@ -1,18 +1,14 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { StyledOptionProps } from "./index.types";
 import { useAppSelector } from "../../app/reduxHooks";
 
-const animation = `
-  transition: .2s ease-in-out;
+const animation = css`
+  transition: 0.2s ease-in-out;
 
   &:hover {
-    translate: 0 -2px;
+    // translate: 0 -2px;
+    box-shadow: 0 0 8px #4d5b9e;
   }
-
-  // &: active {
-  //   scale: .95;
-  //   translate: 0 0;
-  // }
 `;
 
 export const StyledOption = styled.div<StyledOptionProps>`
@@ -30,7 +26,7 @@ export const StyledOption = styled.div<StyledOptionProps>`
     const isQuizFinished = quizState === "finished";
 
     if (!isQuizFinished && isOptionSelected)
-      return `
+      return css`
         cursor: pointer;
         background: ${theme.paleViolet};
         color: ${theme.black};
@@ -38,13 +34,13 @@ export const StyledOption = styled.div<StyledOptionProps>`
       `;
 
     if (!isQuizFinished && !isOptionSelected)
-      return `
+      return css`
         cursor: pointer;
         ${animation}
       `;
 
     if (isQuizFinished && isOptionCorrect)
-      return `
+      return css`
         background-color: ${theme.green};
         color: ${theme.black};
         border-color: ${theme.grayOne};
@@ -52,7 +48,7 @@ export const StyledOption = styled.div<StyledOptionProps>`
       `;
 
     if (isQuizFinished && isOptionSelected && !isOptionCorrect)
-      return `
+      return css`
         background-color: ${theme.red};
         color: ${theme.grayOne};
         border-color: ${theme.grayOne};
@@ -61,12 +57,12 @@ export const StyledOption = styled.div<StyledOptionProps>`
       `;
 
     if (isQuizFinished && !isOptionSelected && !isOptionCorrect)
-      return `
+      return css`
         opacity: 0.5;
         pointer-events: none;
       `;
 
-    return `
+    return css`
       cursor: pointer;
       ${animation}
     `;

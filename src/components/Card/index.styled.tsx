@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 interface CardProps {
   isCorrect?: boolean | undefined;
+  isAnswerGiven?: boolean | undefined;
 }
 
 export const BasicCard = styled.section`
@@ -20,7 +21,7 @@ export const BasicCard = styled.section`
 `;
 
 export const StyledCard = styled(BasicCard)<CardProps>`
-  background: ${(props) => props.theme.whiteOne};
+  background: ${(props) => (props.isAnswerGiven ? props.theme.grayThree : props.theme.whiteOne)};
 
   &::after {
     content: "";
@@ -35,13 +36,13 @@ export const StyledCard = styled(BasicCard)<CardProps>`
 
   ${(props) => {
     if (props.isCorrect === true)
-      return `
+      return css`
         background: ${props.theme.paleGreen};
       `;
     if (props.isCorrect === false)
-      return `
+      return css`
         background: ${props.theme.paleRed};
-    `;
+      `;
   }}
 `;
 
@@ -56,17 +57,17 @@ export const Header = styled.h2<HeaderProps>`
 
   ${(props) => {
     if (props.isCorrect === true)
-      return `
+      return css`
         &::before {
           content: "✅ ";
         }
-    `;
+      `;
     if (props.isCorrect === false)
-      return `
+      return css`
         &::before {
           content: "❌ ";
         }
-    `;
+      `;
   }}
 `;
 

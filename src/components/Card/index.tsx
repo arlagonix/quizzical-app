@@ -5,14 +5,7 @@ import { IQuestion } from "../../features/questions/questionsSlice";
 import "react-loading-skeleton/dist/skeleton.css";
 import Skeleton from "react-loading-skeleton";
 import Option from "../Option";
-import {
-  Badge,
-  Header,
-  StyledCard,
-  BadgesCointainer,
-  OptionsContainer,
-  SkeletonBadge,
-} from "./index.styled";
+import { Badge, Header, StyledCard, BadgesCointainer, OptionsContainer, SkeletonBadge } from "./index.styled";
 
 interface CardProps extends IQuestion {}
 
@@ -29,7 +22,7 @@ export default function Card({
   const isCorrect = quizState === "finished" ? selectedOptionID === correctOptionID : undefined;
   const dispatch = useAppDispatch();
   return (
-    <StyledCard isCorrect={isCorrect}>
+    <StyledCard isCorrect={isCorrect} isAnswerGiven={selectedOptionID !== null}>
       <Header isCorrect={isCorrect}>{question}</Header>
       <OptionsContainer>
         {options.map((option) => (
